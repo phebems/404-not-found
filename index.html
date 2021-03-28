@@ -8,88 +8,117 @@
   maximum-scale=5"
     />
 
-    <link rel="icon" href="devchallenges.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Space+Mono:ital@1&display=swap" rel="stylesheet">
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Devchallenges</title>
+    <title>404 not found</title>
 
     <style>
-      body {
-        font-family: "Poppins", sans-serif;
+      body, button {
+        font-family: 'Space Mono', monospace;
       }
 
-      ul {
-        padding-left: 24px;
+      .grid {
+        display: grid;
+        width: auto;
+        height: 1080px;
+        grid-template: 25% 43% 29% 3% / 51% 49% ;
       }
 
-      li {
-        margin-bottom: 8px;
+      header {
+        font-family: 'Inconsolata', monospace;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 25px;
+        letter-spacing: -0.08em;
+        text-transform: uppercase;
+        grid-row: 1 / 2;
+        grid-column: 1 / span 2;
+        margin-left: 77px;
+        margin-top: 40px;
       }
 
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
+      .image {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        margin-left: 77px;     
+        
       }
 
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
+      img {
+        width: 75%;
+        height: 100%;
+        justify-content: center;
       }
 
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
+      .text {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
       }
 
-      .welcome-text h1 {
-        font-size: 1.5rem;
+      h1 {
+        font-family: 'Inconsolata', monospace;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 95px;
+        letter-spacing: -0.035em;
+        margin-right: 119px;
       }
 
-      .welcome-text a {
-        color: #f7542e;
+      .news {
+       
+      }
+
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.035em;
+        width: 381px;
+        height: 108px;
+      }
+
+      .para {
+        margin-top: 36px;
+      }
+
+      button {
+        font-family: 'Inconsolata', monospace;
+        text-transform: uppercase;
+        background-color:  #333333;
+        color: #FFFFFF;
+        width: 216px;
+        height: 68px;
+        border:0;
+        margin-top: 64px;
+      }
+
+      footer {
+        grid-row: 4 / 5;
+        grid-column: 1 / span 2;
+        text-align: center;
+        color: #BDBDBD;
+
       }
     </style>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+    <div class="grid">
+      <div class="header">
+        <header>404 NOT FOUND</header>   
       </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+      <div class="image"> <img src="Scarecrow.png"></div>
+      <div class="text">
+        <div class="news"><h1>I have bad news for you</h1></div>
+        <div class="para"><p>The page you are looking for might be removed or is temporarily unavailable</p></div>
+        
+      <button>back to homepage</button>
+      </div>
+      <footer>created by phebe - devChallenges.io</footer>
     </div>
+    
   </body>
 </html>
